@@ -1163,7 +1163,7 @@ sub log_file_recommandations {
         badprint "Log file $myvar{'log_error'} is bigger than 32 Mb";
         push @generalrec,
           $myvar{'log_error'}
-          . "is > 32Mb, you should analyze why or implement a rotation log strategy such as logrotate!";
+          . " is > 32Mb, you should analyze why or implement a rotation log strategy such as logrotate!";
     }
 
     my @log_content = get_file_contents( $myvar{'log_error'} );
